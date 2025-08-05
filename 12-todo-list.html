@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    todo-list
+  </title>
+  <link rel="stylesheet" href="css/12-todo-list.css">
+</head>
+
+<body>
+
+<div class="todo-container">
+  <h1 class="todo-title">Todo List</h1>
+  <div class="todo-input-grid">
+    <input  placeholder="Todo name" class="js-name-input name-input" aria-label="Todo name">
+    <input type="date" class="js-date-input date-input" aria-label="Due date">
+    <button class="btn js-btn" aria-label="Add todo">
+      Add
+    </button>
+  </div>
+
+  <div class="js-todoList todo-grid">
+    <div class="todo-empty-message" style="display:none; text-align:center; color:#888; grid-column: 1 / -1;">No todos yet. Add your first task!</div>
+    <!-- Todo items will be rendered here by JS -->
+  </div>
+</div>
+
+<script src="scripts/12-todo-list.js"></script>
+</body>
+
+</html>

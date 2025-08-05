@@ -1,0 +1,86 @@
+body{
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #7b2ff2 0%, #f357a8 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.todo-grid,
+.todo-input-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.todo-input-grid{
+  margin-bottom: 18px;
+  align-items: stretch;
+}
+.name-input,
+.date-input{
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.name-input:focus,
+.date-input:focus{
+  border-color: #7b2ff2;
+  box-shadow: 0 0 0 2px #f357a880;
+}
+.btn{
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.15);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+.btn:hover, .btn:focus {
+  background: #218838;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(40, 167, 69, 0.25);
+}
+
+.btn2{
+  background-color: #b10e2e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(177, 14, 46, 0.15);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+.btn2:hover, .btn2:focus {
+  background: #e63946;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(177, 14, 46, 0.25);
+}
+
+/* Card style for todo items (optional, for better look) */
+.todo-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 18px 24px;
+  margin-bottom: 18px;
+  width: 100%;
+  max-width: 600px;
+}
